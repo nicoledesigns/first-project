@@ -1,0 +1,188 @@
+ * {
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     list-style: none;
+
+ }
+
+ .header {
+     width: 100%;
+     height: 80px;
+     display: block;
+     background-color: #476967;
+ }
+
+ .inner_header {
+     width: 500px;
+     height: 100%;
+     display: block;
+     margin: 0 auto;
+     background-color: #6ea3a0;
+
+ }
+
+ .logo_container {
+     height: 100%;
+     display: table;
+     float: left;
+ }
+
+ .logo_container h1 {
+     color: black;
+     height: 100%;
+     display: table-cell;
+     vertical-align: middle;
+     font-family: monospace;
+     font-size: 30px;
+     font-weight: 200;
+ }
+
+ .logo_container h1 span {
+     font-weight: 800;
+ }
+
+ img {
+     height: 70px;
+     width: 70px;
+     mix-blend-mode: multiply;
+     vertical-align: middle;
+ }
+
+ .sidebar {
+     position: fixed;
+     left: -250px;
+     width: 250px;
+     height: 100%;
+     background: #476967;
+     transition: all .5s ease;
+ }
+
+ .sidebar header {
+     font-size: 22px;
+     color: black;
+     text-align: center;
+     line-height: 70px;
+     background: #6ea3a0;
+     user-select: none;
+ }
+
+ .sidebar ul a {
+     display: block;
+     height: 100%;
+     width: 100%;
+     line-height: 65px;
+     font-size: 15px;
+     color: white;
+     padding-left: 40px;
+     box-sizing: border-box;
+     border-top: 0.5px solid black;
+     border-bottom: 0.5px solid black;
+     transition: .4s;
+
+ }
+
+ ul li:hover a {
+     padding-left: 50px;
+ }
+
+ .sidebar ul a i {
+     margin-right: 16px;
+ }
+
+ #check {
+     display: none;
+ }
+
+ label #btn,
+ label #cancel {
+     position: absolute;
+     cursor: pointer;
+ }
+
+ label #btn {
+     left: 20px;
+     top: 25px;
+     font-size: 35px;
+     color: black;
+     padding: 56px 0px;
+     transition: all .5s;
+ }
+
+ label #cancel {
+     z-index: 1111;
+     left: -195px;
+     top: 25px;
+     font-size: 30px;
+     color: black;
+     padding: 60px 12px;
+     transition: all .5s ease;
+ }
+
+ #check:checked ~ .sidebar {
+     left: 0px;
+ }
+
+ #check:checked ~ label #btn {
+     left: 250px;
+     opacity: 0;
+     pointer-events: none;
+ }
+
+ #check:checked ~ label #cancel {
+     left: 195px;
+ }
+
+ .wrapper {
+
+     background: url(beige.webp);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+     height: 100vh;
+
+ }
+
+ .wrapper .content {
+     position: absolute;
+     top: 45%;
+     left: 50%;
+     bottom: 15%;
+     transform: translate(-50%, -50%);
+     font-family: sans-serif;
+     user-select: none;
+     border-radius: 50px;
+
+ }
+
+ .disclaimer {
+     color: red;
+     font-weight: bold;
+     margin-top: 240px;
+ }
+
+ footer {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: rgb(0, 0, 0, 0.4);
+     height: auto;
+     width: 100vw;
+     font-family: "Open Sans";
+     padding-top: 18px;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+ }
+
+ footer p {
+     max-width: 500px;
+     margin: 5px auto;
+     line-height: 28px;
+     font-size: 14px;
+ }

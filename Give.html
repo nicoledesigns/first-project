@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/98e37258d9.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title> Question 8: Project</title>
+    <link rel="stylesheet" href="Give.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+
+            <div class="inner_header">
+                <div class="logo_container">
+                    <a href="Home.html" target="_self">
+                        <img src="pawlogo.jpeg" alt="logo">
+                    </a>
+                    <h1> AdoptMy<span>PET</span>Shop</h1>
+
+                </div>
+                <div id="datetime" class="datetime"></div>
+
+            </div>
+        </div>
+
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+            <header> Menu Bar</header>
+            <ul>
+                <li><a href="Home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="AvailablePets.html"><i class="fas fa-paw"></i>Browse Available Pets</a></li>
+                <li><a href="Find.html"><i class="fas fa-search"></i>Find a dog/cat</a></li>
+                <li><a href="DogCare.html"><i class="fas fa-dog"></i>Dog Care</a></li>
+                <li><a href="CatCare.html"><i class="fas fa-cat"></i>Cat Care</a></li>
+                <li><a href="#"><i class="fas fa-paper-plane"></i>Have a pet to give away</a></li>
+                <li> <a href="Contact.html"><i class="fas fa-phone"></i>Contact Us</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Copyright © 2024 AdoptMyPet</p>
+            <a href="#disclaimer">Privacy</a>
+        </footer>
+
+        <div class="content">
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Pet Information</legend>
+                    <label for="petType">Pet Type:</label>
+                    <select id="petType" name="petType">
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                    </select><br><br>
+                    <label for="breed">Breed:</label>
+                    <input type="text" id="breed" name="breed"><br><br>
+                    <label for="age">Age:</label>
+                    <select id="age" name="age">
+                        <option value="0-1">0-1 year</option>
+                        <option value="1-2">1-2 years</option>
+                        <option value="2-5">2-5 years</option>
+                        <option value="5+">5+ years</option>
+                    </select><br><br>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select><br><br>
+                    <label for="otherDogs">Gets along with other dogs:</label>
+                    <select id="otherDogs" name="otherDogs">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+                    <label for="otherCats">Gets along with other cats:</label>
+                    <select id="otherCats" name="otherCats">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+                    <label for="smallChildren">Suitable for a family with small children:</label>
+                    <select id="smallChildren" name="smallChildren">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment"></textarea><br><br>
+                    <div id="errorMessage" style="color: red;"></div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Owner Information</legend>
+                    <label for="ownerName">Owner's Full Name:</label>
+                    <input type="text" id="ownerName" name="ownerName"><br><br>
+                    <label for="ownerEmail">Owner's Email:</label>
+                    <input type="email" id="ownerEmail" name="ownerEmail">
+                    <br><br>
+                </fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </form>
+
+            <br><br>
+            <div class=disclaimer>
+                <h4 id="disclaimer"> <br> <br>Disclaimer: User's information will not be sold or misused, and protects the website builder from any incorrect information poster by the pet owner.</h4>
+            </div>
+        </div>
+    </div>
+    <script src="Q7.js"></script>
+</body>
