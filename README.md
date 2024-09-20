@@ -1,4 +1,4 @@
-#Pet Website
+# Pet Website
 
 The goal of this project was to design a pet website by myself using my competencies learned in my 1st year of university
 
